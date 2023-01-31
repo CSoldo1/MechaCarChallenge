@@ -32,3 +32,27 @@ A flaw of the multiple r2 value in linear regression is that it will always incr
 even if it has little to no correlation with the dependent variable. Thus, when using linear regression models, one should stick with the 
 principle of parsimony - we want the simplest model that adequately explains a phenomenon. Therefore, I would stick with vehicle_length and
 ground_Clearance as the two variables that best predict a vehicle's mpg. 
+
+## Create Visualizations for the Trip Analysis
+### Background 
+The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, 
+the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. 
+
+### Analysis
+I used the "favstats" function located within the Mosaic package to get a total summary of the "PSI" column.
+![Favstats Output](https://github.com/CSoldo1/MechaCarChallenge/blob/main/Images/favstats_output.PNG)
+
+I prefer to use the "favstats" function instead of "summarize()" because it includes more information, such as
+min, max, and population(n). It also lets you know if there are any missing values in the column. The one measure it does not 
+provide that is included in the "summarize()" function is variance. However, you can easily calculate this measurement 
+by squaring the standard deviation. 
+
+I then grouped the suspension coils by the lot on which it was manufactured, to see if there is any differences in PSI based
+on manufacturing location. 
+
+### Results
+![Lot Summary Overview](https://github.com/CSoldo1/MechaCarChallenge/blob/main/Images/lot_summary_overview.PNG)
+
+### Conclusion
+The mean PSI of Lot 3 is a little lower than the other two lots. The variance, on the other hand, is much higher. This discrepency 
+is cause for concern and requires further evaluation. 
