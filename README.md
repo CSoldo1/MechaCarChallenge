@@ -56,3 +56,28 @@ on manufacturing location.
 ### Conclusion
 The mean PSI of Lot 3 is a little lower than the other two lots. The variance, on the other hand, is much higher. This discrepency 
 is cause for concern and requires further evaluation. 
+
+## T-Tests on Suspension Coils
+### Background
+Using R, I performed t-tests to determine if all manufacturing lots and each lot individually
+are statistically different from the population mean of 1,500 pounds per square inch.
+
+### Analysis
+Before performing t-tests, I think it's best to get a veiw of the data. Boxplots are a good way to see
+the spread of the data.
+![PSI box Plot](https://github.com/CSoldo1/MechaCarChallenge/blob/main/Images/Lot_PSI_Boxplot.png)
+
+Already, we can see that there are a lot of outliers in Lot 3.
+
+### Results
+The mean of all the manufacturing lots is not statistically different from the population mean. In other words,
+our p-value is greater than our threshold of 0.05. 
+![T-test Output](https://github.com/CSoldo1/MechaCarChallenge/blob/main/Images/t-test_output.PNG)
+
+However, the results of the individual lot t-tests tells a different story. For convenience,
+I combined the results of the t-test for each lot into a dataframe. 
+![T-test P-values](https://github.com/CSoldo1/MechaCarChallenge/blob/main/Images/ttest_pvalues.PNG)
+
+### Conclusion
+Lot 3 had a p-value of 0.041, and therefore, its mean PSI is significantly different from the population mean. 
+
