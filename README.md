@@ -81,3 +81,20 @@ I combined the results of the t-test for each lot into a dataframe.
 ### Conclusion
 Lot 3 had a p-value of 0.041, and therefore, its mean PSI is significantly different from the population mean. 
 
+## Study Design: MechaCar vs Competition
+### Background
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. 
+In your study design, think critically about what metrics would be of interest to a consumer: 
+for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+Overview: Vehicle safety is an important consideration for customers. 
+
+Question: Does MechaCar produce safer vehicles than the competition? 
+
+Null Hypothesis: There is no difference in overall safety rating between MechaCar and its competition.
+Alternative Hypothesis: On average, MechaCar vehicles receive higher safety ratings than the competition. 
+
+Study Design: Make sure to pick a competitor that manufactures similar vehicle models to MechaCar. Collect safety ratings for all company models manufactured in 2023. Get the average safety rating (or safety rating of the population)
+for each make. 
+
+Statistical Test: Perform a t-test to see if MechCar vehicle safety ratings, on average, are statistically different from the competition. 
